@@ -18,9 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
-	//@Autowired
-	//private WebClient webClient;
-//
+
 	@Override
 	public EmployeeResponse createEmployeeDetails(CreateEmployeeRequest createEmployeeRequest) {
 		Employee employee = new Employee();
@@ -49,9 +47,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private String addressServiceUrl;
 	
 	public AddressResponse getAddressById(long addressId) {
-		// Mono<AddressResponse> addressResponse =
-		// webClient.get().uri("/get/"+addressId).retrieve().bodyToMono(AddressResponse.class);
-		// return addressResponse.block();
+		
 
 		String uri = addressServiceUrl+"/get/" + addressId;
 		RestTemplate restTemplate = new RestTemplate();

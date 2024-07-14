@@ -17,8 +17,5 @@ public class EmployeeServiceApplication {
 		SpringApplication.run(EmployeeServiceApplication.class, args);
 	}
 
-	/*@Bean
-	public WebClient webClient() {
-		return WebClient.builder().baseUrl(addressServiceUrl).build();
-	}*/
+	
 }

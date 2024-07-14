@@ -3,12 +3,13 @@ package com.employee.net.entity;
 import java.io.Serializable;
 
 import jakarta.persistence.Column;
+import lombok.Data;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.Data;
+
 
 @Data
 @Entity
