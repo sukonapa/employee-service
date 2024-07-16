@@ -4,12 +4,14 @@ import com.employee.net.entity.Employee;
 
 import lombok.Data;
 
+
 @Data
 public class EmployeeResponse {
 	
 	private long id;
 	
 	private String firstName;
+
 	
 	private String lastName;
 	
